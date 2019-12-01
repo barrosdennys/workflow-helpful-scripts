@@ -1,11 +1,11 @@
-<b>Q: Do I need to do something on Liferay Portal?</b>
+<b>Q: Do I need to do something on Liferay Portal?</b><br>
 A: Yes. Associate Single Approver process (or a copy of it) with Blog Entry
 
-<b>Q: How to execute the groovy scripts?</b>
+<b>Q: How to execute the groovy scripts?</b><br>
 A: Go to Liferay Portal > Control Panel > Server Administration > Script, paste the script there and click on Execute.
 
-<b>Q: How to use createBlogContent_curl.sh</b>
-A: bash createBlogContent_curl.sh <numberOfBlogsInstances>
+<b>Q: How to use createBlogContent_curl.sh</b><br>
+A: bash createBlogContent_curl.sh (number_of_instances)
 
 <b>List of scripts:</b>
 
@@ -45,7 +45,7 @@ A: bash createBlogContent_curl.sh <numberOfBlogsInstances>
 <b>// CREATE BLOG ENTRIES</b>
 
 <b>createBlogContent_curl.sh</b>
-    - Creates $1 blog instances
+  - Creates $1 blog instances
 
 <b>createBlogs.groovy</b>
   - Creates i blogs
