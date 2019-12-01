@@ -9,7 +9,7 @@ A: bash createBlogContent_curl.sh (number_of_instances)
 
 <b>List of scripts:</b>
 
-<b>// ADD USERS</b>
+<ins><b>ADD USERS</b>
 
 <b>addUsers.groovy</b>
   - Adds i users with "Administrador" roles
@@ -17,7 +17,7 @@ A: bash createBlogContent_curl.sh (number_of_instances)
 <b>addUsersWithRoles.groovy</b>
   - Adds i users with i roles
 
-<b>// ASSIGN TASKS</b>
+<ins><b>ASSIGN TASKS</b>
 
 <b>AssignOpenTasksToCurrentUserAndAndComplete.groovy</b>
   - Assignes all eligible open tasks to the current user and complete them all
@@ -28,7 +28,7 @@ A: bash createBlogContent_curl.sh (number_of_instances)
 <b>AssignTasksToCurrentUser.groovy</b>
   - Assignes all eligible tasks to the current user
 
-<b>// COMPLETE TASKS</b>
+<ins><b>COMPLETE TASKS</b>
 
 <b>CompleteTasksAssginedToCurrentUser.groovy</b>
   - Approves ALL tasks of the current user
@@ -42,7 +42,7 @@ A: bash createBlogContent_curl.sh (number_of_instances)
 <b>ResubmitTasksFromCurrentUser.groovy</b>
   - Resubmits ALL tasks of the current user
 
-<b>// CREATE BLOG ENTRIES</b>
+<ins><b>CREATE BLOG ENTRIES</b>
 
 <b>createBlogContent_curl.sh</b>
   - Creates $1 blog instances
@@ -50,7 +50,7 @@ A: bash createBlogContent_curl.sh (number_of_instances)
 <b>createBlogs.groovy</b>
   - Creates i blogs
 
-<b>// FULL WORKFLOW PROCESS</b>
+<ins><b>FULL WORKFLOW PROCESS</b>
 
 <b>fullWorkflow.groovy</b>
   - Creates i user with i role, 1 blog per user, assign 1 task per user and complete it
