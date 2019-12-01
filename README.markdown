@@ -30,7 +30,7 @@ A: bash createBlogContent_curl.sh (number_of_instances)
 
 <ins><b>COMPLETE TASKS</b>
 
-<b>CompleteTasksAssginedToCurrentUser.groovy</b>
+<b>CompleteTasksAssignedToCurrentUser.groovy</b>
   - Approves ALL tasks of the current user
 
 <b>CompleteTasksAssignedToUsers.groovy</b>
