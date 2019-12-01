@@ -1,47 +1,59 @@
-Q: Do I need to do something on Liferay Portal?
+<b>Q: Do I need to do something on Liferay Portal?</b>
 A: Yes. Associate Single Approver process (or a copy of it) with Blog Entry
 
-Q: How to execute the groovy scripts?
+<b>Q: How to execute the groovy scripts?</b>
 A: Go to Liferay Portal > Control Panel > Server Administration > Script, paste the script there and click on Execute.
 
-Q: How to use createBlogContent_curl.sh
+<b>Q: How to use createBlogContent_curl.sh</b>
 A: bash createBlogContent_curl.sh <numberOfBlogsInstances>
 
-List of scripts:
+<b>List of scripts:</b>
 
-// ADD USERS
+<b>// ADD USERS</b>
 
-addUsers.groovy - Adds i users with "Administrador" roles
+<b>addUsers.groovy</b>
+  - Adds i users with "Administrador" roles
 
-addUsersWithRoles.groovy - Adds i users with i roles
+<b>addUsersWithRoles.groovy</b>
+  - Adds i users with i roles
 
-// ASSIGN TASKS
+<b>// ASSIGN TASKS</b>
 
-AssignOpenTasksToCurrentUserAndAndComplete.groovy - Assignes all eligible open tasks to the current user and complete them all
+<b>AssignOpenTasksToCurrentUserAndAndComplete.groovy</b>
+  - Assignes all eligible open tasks to the current user and complete them all
 
-AssignOpenTasksToUsers.groovy - Assignes ALL open tasks to available users. The script assignes 1 task per user until the tasks are finished. 
+<b>AssignOpenTasksToUsers.groovy</b>
+  - Assignes ALL open tasks to available users. The script assignes 1 task per user until the tasks are finished. 
 
-AssignTasksToCurrentUser.groovy - Assignes all eligible tasks to the current user
+<b>AssignTasksToCurrentUser.groovy</b>
+  - Assignes all eligible tasks to the current user
 
-// COMPLETE TASKS
+<b>// COMPLETE TASKS</b>
 
-CompleteTasksAssginedToCurrentUser.groovy - Approves ALL tasks of the current user
+<b>CompleteTasksAssginedToCurrentUser.groovy</b>
+  - Approves ALL tasks of the current user
 
-CompleteTasksAssignedToUsers.groovy - Completes ALL open tasks from ALL users 
+<b>CompleteTasksAssignedToUsers.groovy</b>
+  - Completes ALL open tasks from ALL users 
 
-RejectTasksFromCurrentUser.groovy - Rejects ALL tasks Assigned to the current user
+<b>RejectTasksFromCurrentUser.groovy</b>
+  - Rejects ALL tasks Assigned to the current user
 
-ResubmitTasksFromCurrentUser.groovy - Resubmits ALL tasks of the current user
+<b>ResubmitTasksFromCurrentUser.groovy</b>
+  - Resubmits ALL tasks of the current user
 
-// CREATE BLOG ENTRIES
+<b>// CREATE BLOG ENTRIES</b>
 
-createBlogContent_curl.sh - Creates $1 blog instances
+<b>createBlogContent_curl.sh</b>
+    - Creates $1 blog instances
 
-createBlogs.groovy - Creates i blogs
+<b>createBlogs.groovy</b>
+  - Creates i blogs
 
-// FULL WORKFLOW PROCESS
+<b>// FULL WORKFLOW PROCESS</b>
 
-fullWorkflow.groovy - Creates i user with i role, 1 blog per user, assign 1 task per user and complete it
+<b>fullWorkflow.groovy</b>
+  - Creates i user with i role, 1 blog per user, assign 1 task per user and complete it
 
 
 
