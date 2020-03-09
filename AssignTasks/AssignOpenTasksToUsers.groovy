@@ -36,7 +36,7 @@ for (WorkflowTask workflowTask : workflowTasks) {
     if (activeUser.getEmailAddress().contains("test")) {
         userId = activeUser.getUserId();
 
-        WorkflowTaskManagerUtil.assignWorkflowTaskToUser(companyId, mainUserId, workflowTask.getWorkflowTaskId(), userId, StringPool.BLANK, null, null);
+        WorkflowTaskManagerUtil.assignWorkflowTaskToUser(companyId, mainUserId, workflowTask.getWorkflowTaskId(), userId, "BLANK", null, null);
     }
     userCount++;
 
