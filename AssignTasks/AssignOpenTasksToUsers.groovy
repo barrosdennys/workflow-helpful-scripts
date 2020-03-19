@@ -1,5 +1,6 @@
-//Assign ALL open tasks to available users. The script assignes 1 task per user until the tasks are finished. 
+//Assign ALL open tasks to available users. The script assigns 1 task per user until the tasks are finished. 
 
+import com.liferay.petra.string.*
 import com.liferay.portal.kernel.dao.orm.*
 import com.liferay.portal.kernel.model.*
 import com.liferay.portal.kernel.service.*
@@ -9,7 +10,7 @@ import com.liferay.portal.kernel.workflow.*
 import com.liferay.blogs.service.*
 import java.util.*
 
-idCount = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsersCount() - 2;
+//Excluding from the count the existing users
 companyId = com.liferay.portal.kernel.util.PortalUtil.getCompanyId(actionRequest)
 mainUserId = com.liferay.portal.kernel.util.PortalUtil.getUserId(actionRequest)
 List<User> users = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsers(0,100);
@@ -27,17 +28,15 @@ for (User user : users){
 userCount = 0;
 
 for (WorkflowTask workflowTask : workflowTasks) {
-    if (userCount==idCount){
+    if (userCount==activeUsers.size()){
         userCount=0;
     }
 
     activeUser = activeUsers.get(userCount);
-    
-    if (activeUser.getEmailAddress().contains("test")) {
-        userId = activeUser.getUserId();
+    userId = activeUser.getUserId();
 
-        WorkflowTaskManagerUtil.assignWorkflowTaskToUser(companyId, mainUserId, workflowTask.getWorkflowTaskId(), userId, "BLANK", null, null);
-    }
+    WorkflowTaskManagerUtil.assignWorkflowTaskToUser(companyId, mainUserId, workflowTask.getWorkflowTaskId(), userId, StringPool.BLANK, null, null);
+    
     userCount++;
 
 }
