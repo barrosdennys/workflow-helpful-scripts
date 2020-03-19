@@ -19,7 +19,7 @@ List<User> activeUsers = new ArrayList<User>();
 workflowTasks.addAll(WorkflowTaskManagerUtil.getWorkflowTasksByUserRoles(companyId, mainUserId, false, QueryUtil.ALL_POS, QueryUtil.ALL_POS, null))
 
 for (User user : users){
-    if (user.getEmailAddress().contains("test")) {
+    if (user.getEmailAddress().contains("user")) {
         activeUsers.add(user);
     }
 }
