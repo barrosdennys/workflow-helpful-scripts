@@ -1,5 +1,5 @@
-//Add i users with i roles
-//Example: test1 with test1 role
+//Adds i users with i roles
+//Example: 1user user1 with Role 1 role
 
 import com.liferay.portal.kernel.dao.orm.*
 import com.liferay.portal.kernel.util.*
@@ -10,22 +10,23 @@ import java.util.*
 companyId = com.liferay.portal.kernel.util.PortalUtil.getCompanyId(actionRequest)
 userId = com.liferay.portal.kernel.util.PortalUtil.getUserId(actionRequest)
 group = com.liferay.portal.kernel.service.GroupLocalServiceUtil.getGroup(companyId, "Guest");
+numberOfUsers = 0
 groupId = group.getGroupId();
 serviceContext = new com.liferay.portal.kernel.service.ServiceContext();
 serviceContext.setCompanyId(companyId)
 serviceContext.setScopeGroupId(group.getGroupId())
 serviceContext.setUserId(userId)
 
-for (i =0; i < 9; i++) {
+for (i =1; i <= numberOfUsers; i++) {
    boolean autoPassword = true;
    String password = "123";
-   String screenName = i + "test";
-   String emailAddress = i + "test@liferay.com";
+   String screenName = i + "user";
+   String emailAddress = i + "user@liferay.com";
    long facebookId = 0;
    String openId = "";
-   String firstName = i + "test";
+   String firstName = i + "user";
    String middleName = "";
-   String lastName = "test" + i;
+   String lastName = "user" + i;
    long prefixId = 0;
    long suffixId = 0;
    boolean male = true;
